@@ -3,61 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models">
+  <meta name="description" content="ActPrune prunes visual tokens before the vision encoder using the robot's previous action, achieving up to 1.66× speedup in VLA models without training.">
+  <meta name="keywords" content="vision-language-action, VLA, visual token pruning, robot manipulation, efficient inference, robotics">
+  <meta name="author" content="Sungwon Moon, Minji Kim, Hyemin Boo, Daeun Song, Jiyoung Lee">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
+  <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:site_name" content="Ewha Womans University">
+  <meta property="og:title" content="ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models">
+  <meta property="og:description" content="ActPrune prunes visual tokens before the vision encoder using the robot's previous action, achieving up to 1.66× speedup in VLA models without training.">
+  <meta property="og:url" content="https://YOUR_ORG.github.io/YOUR_REPO/">
+  <meta property="og:image" content="https://YOUR_ORG.github.io/YOUR_REPO/static/images/idea.png">
+  <meta property="og:image:alt" content="ActPrune overview">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models">
+  <meta name="twitter:description" content="ActPrune prunes visual tokens before the vision encoder using the robot's previous action, achieving up to 1.66× speedup in VLA models without training.">
+  <meta name="twitter:image" content="https://YOUR_ORG.github.io/YOUR_REPO/static/images/idea.png">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <!-- Academic -->
+  <meta name="citation_title" content="ActPrune: Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models">
+  <meta name="citation_author" content="Moon, Sungwon">
+  <meta name="citation_author" content="Kim, Minji">
+  <meta name="citation_author" content="Boo, Hyemin">
+  <meta name="citation_author" content="Song, Daeun">
+  <meta name="citation_author" content="Lee, Jiyoung">
+  <meta name="citation_publication_date" content="2026">
   
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
@@ -74,7 +50,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>ActPrune: Action-Grounded Visual Token Pruning for VLA Models</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -99,8 +75,85 @@
   </noscript>
   
   <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .ap-hero { text-align: center; padding: 3.5rem 1rem 1.5rem; font-family: 'Inter', sans-serif; color: #1a1a1a; }
+    .ap-title { font-size: clamp(3rem, 9vw, 6rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1; margin: 0; }
+    .ap-bar { width: 72px; height: 4px; background: #2563eb; border-radius: 2px; margin: 1.6rem auto; }
+    .ap-subtitle { font-size: clamp(1.25rem, 2.6vw, 1.9rem); font-weight: 600; letter-spacing: -0.01em; line-height: 1.3; max-width: 760px; margin: 0 auto 1.8rem; }
+    .ap-authors { font-size: 1.1rem; font-weight: 500; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1.4rem; }
+    .ap-authors a { color: #1a1a1a; text-decoration: underline; text-decoration-color: #9ca3af; text-underline-offset: 4px; }
+    .ap-authors a:hover { text-decoration-color: #1a1a1a; }
+    .ap-authors sup, .ap-affil sup { color: #6b7280; font-weight: 400; font-size: 0.7em; margin-left: 1px; }
+    .ap-affil { font-size: 0.95rem; color: #6b7280; margin-top: 0.6rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.2rem 1.4rem; }
+    .ap-note { font-size: 0.85rem; color: #9ca3af; margin-top: 0.5rem; }
+    .ap-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; margin-top: 1.8rem; font-family: 'Inter', sans-serif; }
+    .ap-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: #1a1a1a; color: #fff !important; font-weight: 700; font-size: 0.95rem; padding: 0.65rem 1.2rem; border-radius: 999px; text-decoration: none; transition: background .15s; }
+    .ap-btn:hover { background: #3a3a3a; }
+    .ap-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .ap-btn.disabled { pointer-events: none; }
+    .ap-soon { background: #e5e7eb; color: #1a1a1a; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.05em; padding: 0.15rem 0.45rem; border-radius: 999px; }
   
+    .ap-sec { padding: 3.5rem 1rem; font-family: 'Inter', sans-serif; }
+    .ap-sec-title { text-align: center; font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; color: #1a1a1a; margin-bottom: 1rem; }
+    .ap-sec-desc { max-width: 760px; margin: 0 auto 2rem; text-align: center; font-size: 1.05rem; line-height: 1.7; color: #4b5563; }
+    .ap-fig { max-width: 1100px; margin: 0 auto; background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.2rem 1.2rem 1rem; }
+    .ap-fig img { width: 100%; height: auto; display: block; }
+    .ap-fig figcaption { margin-top: 0.9rem; font-size: 0.9rem; line-height: 1.6; color: #6b7280; }
+    .ap-fig figcaption b { color: #1a1a1a; font-weight: 700; }
+
+    .ap-abs { max-width: 760px; margin: 0 auto; text-align: justify; font-size: 1.05rem; line-height: 1.75; color: #374151; }
+    
+    .ap-head { text-align: center; font-family: 'Inter', sans-serif; font-size: clamp(1.6rem, 3.2vw, 2.3rem); font-weight: 800; letter-spacing: -0.03em; color: #1a1a1a; margin-bottom: 1.5rem; }
+    .ap-cards { max-width: 1100px; margin: 1.2rem auto 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; font-family: 'Inter', sans-serif; }
+    .ap-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.4rem 1.3rem; }
+    .ap-num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: #eff6ff; color: #2563eb; font-size: 0.72rem; font-weight: 700; margin-bottom: 0.9rem; }
+    .ap-card h3 { font-size: 1.05rem; font-weight: 700; color: #1a1a1a; letter-spacing: -0.01em; margin: 0 0 0.5rem; }
+    .ap-card p { font-size: 0.92rem; line-height: 1.65; color: #4b5563; margin: 0; }
+    @media (max-width: 768px) { .ap-cards { grid-template-columns: 1fr; } }
+
+    .ap-stage { display: inline-block; background: #eff6ff; color: #2563eb; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; padding: 0.2rem 0.6rem; border-radius: 999px; margin-bottom: 0.9rem; }
+    
+    .ap-table-wrap { max-width: 1000px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 12px; overflow-x: auto; font-family: 'Inter', sans-serif; }
+    .ap-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; color: #1f2937; }
+    .ap-table th { background: #f9fafb; font-size: 0.78rem; font-weight: 600; color: #4b5563; padding: 0.85rem 0.9rem; text-align: center; border-bottom: 1px solid #e5e7eb; white-space: nowrap; }
+    .ap-table td { padding: 0.65rem 0.9rem; text-align: center; border-bottom: 1px solid #f0f0f0; white-space: nowrap; }
+    .ap-table th:first-child, .ap-table td:first-child { text-align: left; }
+    .ap-table tr:last-child td { border-bottom: none; }
+    .ap-table tr.ours td { background: #f5f9ff; }
+    .ap-table tr.ours td:first-child { color: #2563eb; font-weight: 700; }
+    .ap-table b { color: #2563eb; font-weight: 700; }
+    .ap-table u { text-decoration: underline; text-underline-offset: 3px; }
+    .ap-table tr.group td { background: #fafafa; font-style: italic; font-size: 0.8rem; color: #6b7280; text-align: left; padding: 0.5rem 0.9rem; }
+    .ap-table td.indent { padding-left: 1.8rem; }
+    .ap-caption { max-width: 1000px; margin: 0.8rem auto 0; text-align: center; font-size: 0.85rem; color: #6b7280; font-family: 'Inter', sans-serif; }
+
+    .ap-table-title { max-width: 1000px; margin: 2.5rem auto 0.8rem; font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #1a1a1a; }
+    .ap-table-title span { font-weight: 400; color: #6b7280; font-size: 0.9rem; margin-left: 0.4rem; }
+
+    .ap-table th, .ap-table td { text-align: center !important; vertical-align: middle !important; }
+    .ap-table th:first-child, .ap-table td:first-child { text-align: left !important; }
+    .ap-table tr.group td { text-align: left !important; }
+
+    .ap-subhead { max-width: 1000px; margin: 2rem auto 0.4rem; font-family: 'Inter', sans-serif; font-size: 1.4rem; font-weight: 800; letter-spacing: -0.02em; color: #1a1a1a; padding-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; }
+    
+    .ap-footer { text-align: center; padding: 2.5rem 1rem 3rem; font-family: 'Inter', sans-serif; font-size: 0.88rem; color: #9ca3af; line-height: 2; border-top: 1px solid #f0f0f0; margin-top: 2rem; }
+    .ap-footer a { color: #4b5563; text-decoration: none; }
+    .ap-footer a:hover { color: #1a1a1a; text-decoration: underline; }
+
+    #BibTeX.ap-bib { padding: 3rem 1rem; background: #fff; }
+    #BibTeX .ap-bib-title { text-align: center; font-family: 'Open Sans', sans-serif; font-size: 1.9rem; font-weight: 700; color: #2b2b2b; letter-spacing: -0.01em; margin-bottom: 1.2rem; }
+    #BibTeX .ap-bib-box { position: relative; max-width: 700px; margin: 0 auto; background: #f5f5f5 !important; border: 1px solid #e5e5e5; border-radius: 10px; }
+    #BibTeX #bibtex-code { background: transparent !important; border: none !important; margin: 0; padding: 1.4rem 1.4rem; font-family: 'JetBrains Mono', ui-monospace, monospace !important; font-size: 0.82rem; line-height: 1.8; color: #6f6a64 !important; white-space: pre-wrap; }
+    #BibTeX #bibtex-code code { background: transparent !important; color: inherit !important; padding: 0 !important; font-size: inherit !important; font-family: inherit !important; }
+    #BibTeX .copy-bibtex-btn { position: absolute; top: 0.8rem; right: 0.8rem; background: #fff !important; color: #9a9a9a !important; border: 1px solid #e3e3e3 !important; border-radius: 5px; padding: 0.2rem 0.65rem; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 400; cursor: pointer; box-shadow: none !important; }
+    #BibTeX .copy-bibtex-btn:hover { color: #555 !important; }
+
+    #idea .ap-fig img { max-width: 55%; margin: 0 auto; }
+
+  </style>
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -186,53 +239,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+
 
   <main id="main-content">
   <section class="hero">
@@ -240,274 +247,305 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+            <div class="ap-hero">
+              <h1 class="ap-title">ActPrune</h1>
+              <div class="ap-bar"></div>
+              <h2 class="ap-subtitle">Action-Grounded Visual Token Pruning for Efficient Vision-Language-Action Models</h2>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="ap-authors">
+                <span>Sungwon Moon<sup>1</sup></span>
+                <span>Minji Kim<sup>2</sup></span>
+                <span>Hyemin Boo<sup>2</sup></span>
+                <span>Daeun Song<sup>2&dagger;</sup></span>
+                <span>Jiyoung Lee<sup>1,2&dagger;</sup></span>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+              <div class="ap-affil">
+                <span><sup>1</sup>Human-Centered AI Research Institute, Ewha Womans University</span>
+                <span><sup>2</sup>Division of AI &amp; Software, Ewha Womans University</span>
+              </div>
+              <div class="ap-note"><sup>&dagger;</sup>Corresponding Author</div>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+              <div class="ap-links">
+                <a class="ap-btn" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="12" y1="4" x2="12" y2="20"/></svg>arXiv
                 </a>
-              </span>
+                <a class="ap-btn disabled" href="#">
+                  <svg viewBox="0 0 24 24"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></svg>Code<span class="ap-soon">SOON</span>
+                </a>
+                <a class="ap-btn" href="#video">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16" fill="currentColor"/></svg>Video
+                </a>
+                <a class="ap-btn" href="#BibTeX">
+                  <svg viewBox="0 0 24 24"><path d="M7 7h4v4c0 3-2 5-4 6M15 7h4v4c0 3-2 5-4 6"/></svg>BibTeX
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
+<section class="ap-sec" id="video">
+  <h2 class="ap-sec-title">Video Overview</h2>
+  <figure class="ap-fig">
+    <video autoplay controls muted loop playsinline preload="metadata" style="width:100%; height:auto; display:block; border-radius:8px;">
+      <source src="static/videos/ICRA2027_video_V6.mp4" type="video/mp4">
+    </video>
+  </figure>
 </section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="ap-sec" id="abstract">
+  <h2 class="ap-sec-title">Abstract</h2>
+  <p class="ap-abs">
+    Vision-language-action (VLA) models perform versatile manipulation tasks from language instructions, but their inference cost limits how fast a robot can respond in closed-loop control.
+    Visual token pruning reduces this cost; however, prior methods estimate token redundancy from encoded visual embeddings or attention, only after the visual encoder has processed the entire observation.
+    We propose <b>ActPrune</b>, a training-free token pruning method that moves the pruning decision ahead of the vision encoder by grounding it in a geometric prior derived from the robot's own action.
+    The action chunk predicted at the previous control step is already available before the current observation is encoded, and it specifies the end-effector and camera motion between consecutive observations.
+    The same action affects the two standard camera views asymmetrically: in the fixed third-person view, ActPrune retains patches along the projected end-effector trajectory together with semantic anchors, while in the wrist view, it prunes patches that remain unchanged after compensating for the action-induced camera motion.
+    Extensive experiments on two simulation environments (LIBERO and VLABench) and four real-robot tasks demonstrate that ActPrune achieves up to 1.61&times; speedup and 59.5% FLOPs reduction with negligible degradation in success rates.
+  </p>
 </section>
 <!-- End paper abstract -->
 
+<!-- Key Idea -->
+<section class="ap-sec" id="idea">
+  <h2 class="ap-head">The action reveals visual redundancy before encoding</h2>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+  <figure class="ap-fig">
+    <img src="static/images/idea.png" alt="ActPrune concept" loading="lazy">
+    <figcaption>
+      <b>Overview.</b> ActPrune uses the action chunk predicted at the previous step to prune visual tokens before the vision encoder, with view-specific strategies for the third-person and wrist cameras.
+    </figcaption>
+  </figure>
+
+  <div class="ap-cards">
+    <div class="ap-card">
+      <span class="ap-num">1</span>
+      <h3>The action is available before the observation</h3>
+      <p>The action chunk predicted at the previous step is available before the current observation is processed in the visual encoder. Unlike visual features or attention scores, it needs no encoding first.</p>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
+    <div class="ap-card">
+      <span class="ap-num">2</span>
+      <h3>The effect of the action depends on the viewpoint</h3>
+      <p>The redundancy pattern depends on whether the camera moves. A fixed third-person camera sees a static scene where only the manipulator region changes. A wrist camera moves with the end-effector, so the whole image shifts with the action.</p>
+    </div>
+    <div class="ap-card">
+      <span class="ap-num">3</span>
+      <h3>Pruning with view-specific geometric priors</h3>
+      <p>Before encoding, ActPrune turns the action into a geometric prior for each view and prunes patches accordingly. After encoding, encoder attention ranks the retained tokens and prunes the rest within the budget.</p>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
+<!-- Method -->
+<section class="ap-sec" id="method">
+  <h2 class="ap-sec-title">Method</h2>
+  <p class="ap-sec-desc">
+    Before encoding, the previous action guides patch-level pruning in each view. After encoding, encoder attention guides embedding-level pruning of the remaining tokens.
+  </p>
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
+  <figure class="ap-fig">
+    <img src="static/images/method.png" alt="ActPrune overview" loading="lazy">
+    <figcaption>
+      <b>Model.</b> The overall framework of ActPrune. The action chunk predicted at the previous step derives view-specific pruning signals before visual encoding. Pruned patches are compressed into context tokens, and encoder attention applies the remaining budget.
+    </figcaption>
+  </figure>
+
+  <div class="ap-cards">
+    <div class="ap-card">
+      <span class="ap-stage">STAGE 1-1. Patch-level</span>
+      <h3>Third-person view: follow the trajectory</h3>
+      <p>The end-effector trajectory from the previous action is projected onto the image plane, and patches around it are retained, with a larger neighborhood when the gripper is closed. Semantic anchors, extracted once per episode, preserve task-relevant regions that remain static.</p>
+    </div>
+    <div class="ap-card">
+      <span class="ap-stage">STAGE 1-2. Patch-level</span>
+      <h3>Wrist view: compensate the camera motion</h3>
+      <p>Patches from the previous observation are reprojected into the current view using the action-induced camera motion and wrist depth. Patches whose features remain unchanged carry no new information, so they are merged into coarse context tokens instead of being encoded.</p>
+    </div>
+    <div class="ap-card">
+      <span class="ap-stage">STAGE 2. Embedding-level</span>
+      <h3>Rank by attention</h3>
+      <p>After encoding, encoder attention captures the relative importance of patches within the current observation. The retained tokens are ranked by attention and pruned with the remaining budget, so only a small fraction of visual tokens reaches the LLM.</p>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End Method -->
+
+<!-- Results -->
+ <section class="ap-sec" id="results">
+  <h2 class="ap-sec-title">Results</h2>
+
+  <h3 class="ap-subhead">Simulation Experiments</h3>
+  <p class="ap-sec-desc" style="text-align:left; max-width:1000px; margin:0.6rem auto 0;">LIBERO results at 50%, 25%, and 12.5% visual token retention. <b>Bold</b>: best, <u>underline</u>: second best within each retention ratio.</p>
+
+  <figure class="ap-fig" style="max-width:1000px; margin-top:1.5rem;">
+    <img src="static/images/libero_ex.png" alt="LIBERO task examples" loading="lazy">
+  </figure>
+  
+  <h3 class="ap-table-title">OpenVLA-OFT <span>on LIBERO</span></h3>
+  <div class="ap-table-wrap">
+    <table class="ap-table">
+      <thead>
+        <tr>
+          <th>Method</th><th>Spatial</th><th>Object</th><th>Goal</th><th>Long</th>
+          <th>Avg. (%) ↑</th><th>FLOPs (T) ↓</th><th>Latency (ms) ↓</th><th>Speedup ↑</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>OpenVLA-OFT (100%)</td><td>99.0</td><td>97.0</td><td>97.4</td><td>92.6</td><td>96.5</td><td>4.739</td><td>86.17</td><td>1.00&times;</td></tr>
+
+        <tr class="group"><td colspan="9">Retained 50% (50%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td><b>98.6</b></td><td>97.6</td><td><u>97.2</u></td><td>91.2</td><td>96.2</td><td>3.123</td><td><u>66.19</u></td><td><u>1.30&times;</u></td></tr>
+        <tr><td class="indent">+SparseVLM</td><td><u>98.0</u></td><td>96.2</td><td><u>97.2</u></td><td>80.8</td><td>93.1</td><td>3.388</td><td>71.89</td><td>1.20&times;</td></tr>
+        <tr><td class="indent">+DivPrune</td><td>97.8</td><td><u>98.2</u></td><td><u>97.2</u></td><td><u>92.8</u></td><td><u>96.5</u></td><td><u>3.015</u></td><td>72.33</td><td>1.19&times;</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td>97.0</td><td>96.2</td><td>97.1</td><td>90.6</td><td>95.2</td><td>3.509</td><td>78.72</td><td>1.09&times;</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td>97.6</td><td>97.4</td><td>96.4</td><td>92.6</td><td>96.0</td><td>3.025</td><td>73.49</td><td>1.17&times;</td></tr>
+        <tr><td class="indent">+SpecPrune-VLA</td><td>95.2</td><td><b>98.4</b></td><td><b>97.4</b></td><td>48.0</td><td>84.8</td><td>3.069</td><td>72.05</td><td>1.20&times;</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td><b>98.6</b></td><td><b>98.4</b></td><td><u>97.2</u></td><td><b>93.4</b></td><td><b>96.9</b></td><td><b>2.814</b></td><td><b>65.04</b></td><td><b>1.33&times;</b></td></tr>
+
+        <tr class="group"><td colspan="9">Retained 25% (75%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td><u>98.4</u></td><td>97.0</td><td>96.4</td><td><u>89.8</u></td><td>95.4</td><td>2.325</td><td><u>54.62</u></td><td><u>1.58&times;</u></td></tr>
+        <tr><td class="indent">+SparseVLM</td><td>97.8</td><td>97.2</td><td><b>97.6</b></td><td>74.4</td><td>91.8</td><td>2.666</td><td>61.74</td><td>1.40&times;</td></tr>
+        <tr><td class="indent">+DivPrune</td><td><b>98.6</b></td><td>97.8</td><td>95.4</td><td>88.8</td><td>95.2</td><td><u>2.172</u></td><td>55.23</td><td>1.56&times;</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td>98.0</td><td>86.0</td><td>95.4</td><td>79.2</td><td>89.7</td><td>2.869</td><td>63.20</td><td>1.36&times;</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td>98.0</td><td>97.6</td><td>97.0</td><td><u>89.8</u></td><td><u>95.6</u></td><td>2.240</td><td>63.11</td><td>1.37&times;</td></tr>
+        <tr><td class="indent">+SpecPrune-VLA</td><td>94.4</td><td><u>98.4</u></td><td>94.8</td><td>44.0</td><td>82.9</td><td>2.283</td><td>54.37</td><td>1.58&times;</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td>98.0</td><td><b>98.8</b></td><td><u>97.4</u></td><td><b>90.0</b></td><td><b>96.1</b></td><td><b>1.921</b></td><td><b>53.61</b></td><td><b>1.61&times;</b></td></tr>
+
+        <tr class="group"><td colspan="9">Retained 12.5% (87.5%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td><b>98.0</b></td><td>90.8</td><td><b>94.4</b></td><td>64.2</td><td>86.9</td><td>1.941</td><td>52.91</td><td>1.63&times;</td></tr>
+        <tr><td class="indent">+SparseVLM</td><td><u>97.2</u></td><td>94.6</td><td>92.6</td><td>65.6</td><td>87.5</td><td>2.340</td><td>59.94</td><td>1.44&times;</td></tr>
+        <tr><td class="indent">+DivPrune</td><td>93.6</td><td>90.0</td><td>85.6</td><td>53.0</td><td>80.6</td><td><u>1.750</u></td><td><u>52.51</u></td><td><u>1.64&times;</u></td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td>92.2</td><td>88.2</td><td>92.4</td><td>56.4</td><td>82.3</td><td>2.517</td><td>59.08</td><td>1.46&times;</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td>96.8</td><td>95.2</td><td>91.8</td><td><u>68.8</u></td><td><u>88.2</u></td><td>1.844</td><td>65.28</td><td>1.32&times;</td></tr>
+        <tr><td class="indent">+SpecPrune-VLA</td><td>94.0</td><td><b>97.4</b></td><td><u>94.0</u></td><td>40.8</td><td>81.6</td><td>2.018</td><td>54.35</td><td>1.59&times;</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td>96.0</td><td><u>96.0</u></td><td>91.0</td><td><b>71.2</b></td><td><b>88.6</b></td><td><b>1.474</b></td><td><b>52.02</b></td><td><b>1.66&times;</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="ap-table-title">&pi;<sub>0.5</sub> <span>on LIBERO</span></h3>
+  <div class="ap-table-wrap">
+    <table class="ap-table">
+      <thead>
+        <tr>
+          <th>Method</th><th>Spatial</th><th>Object</th><th>Goal</th><th>Long</th>
+          <th>Avg. (%) ↑</th><th>FLOPs (T) ↓</th><th>Latency (ms) ↓</th><th>Speedup ↑</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>&pi;<sub>0.5</sub> (100%)</td><td>98.0</td><td>98.0</td><td>99.4</td><td>90.8</td><td>96.6</td><td>4.975</td><td>178.3</td><td>1.00&times;</td></tr>
+
+        <tr class="group"><td colspan="9">Retained 50% (50%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td>97.4</td><td><b>98.6</b></td><td>96.2</td><td>89.6</td><td>95.5</td><td>3.952</td><td>178.1</td><td>1.00&times;</td></tr>
+        <tr><td class="indent">+SparseVLM</td><td><b>98.4</b></td><td>98.2</td><td>96.2</td><td><b>91.2</b></td><td><u>96.0</u></td><td>4.143</td><td><u>177.1</u></td><td><u>1.01&times;</u></td></tr>
+        <tr><td class="indent">+DivPrune</td><td><u>98.2</u></td><td>96.6</td><td>96.8</td><td>88.8</td><td>95.1</td><td><u>3.825</u></td><td>180.1</td><td>0.99&times;</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td>98.0</td><td>97.0</td><td>95.2</td><td>90.2</td><td>95.1</td><td>4.091</td><td>181.4</td><td>0.98&times;</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td>98.0</td><td>97.8</td><td><u>97.0</u></td><td>89.0</td><td>95.5</td><td>3.895</td><td>180.3</td><td>0.99&times;</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td>98.0</td><td><u>98.4</u></td><td><b>98.4</b></td><td><u>90.6</u></td><td><b>96.4</b></td><td><b>3.695</b></td><td><b>175.5</b></td><td><b>1.02&times;</b></td></tr>
+
+        <tr class="group"><td colspan="9">Retained 25% (75%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td>88.4</td><td><u>97.8</u></td><td>87.0</td><td>83.6</td><td>89.2</td><td>3.447</td><td><u>173.8</u></td><td><b>1.03&times;</b></td></tr>
+        <tr><td class="indent">+SparseVLM</td><td>89.6</td><td><u>97.8</u></td><td>86.4</td><td><u>84.6</u></td><td>89.6</td><td>3.632</td><td>175.0</td><td>1.02&times;</td></tr>
+        <tr><td class="indent">+DivPrune</td><td><b>93.6</b></td><td>95.0</td><td>91.2</td><td><b>85.8</b></td><td><u>91.4</u></td><td>3.257</td><td>175.8</td><td>1.01&times;</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td>91.0</td><td>94.8</td><td><b>92.0</b></td><td>83.0</td><td>90.2</td><td>3.781</td><td>177.4</td><td>1.01&times;</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td>90.4</td><td>97.6</td><td>88.8</td><td>83.4</td><td>90.1</td><td><u>3.357</u></td><td>176.6</td><td>1.01&times;</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td><u>92.0</u></td><td><b>99.0</b></td><td><u>91.4</u></td><td><u>84.6</u></td><td><b>91.8</b></td><td><b>3.063</b></td><td><b>172.9</b></td><td><b>1.03&times;</b></td></tr>
+
+        <tr class="group"><td colspan="9">Retained 12.5% (87.5%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td>68.4</td><td><u>89.6</u></td><td>64.0</td><td>50.4</td><td>68.1</td><td>3.196</td><td><u>172.4</u></td><td><u>1.03&times;</u></td></tr>
+        <tr><td class="indent">+SparseVLM</td><td>67.6</td><td>85.8</td><td>63.2</td><td>54.2</td><td>67.7</td><td>3.357</td><td>173.3</td><td>1.03&times;</td></tr>
+        <tr><td class="indent">+DivPrune</td><td><u>72.2</u></td><td>87.2</td><td>70.2</td><td><u>58.4</u></td><td><u>72.0</u></td><td><u>2.975</u></td><td>175.2</td><td>1.02&times;</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td>71.4</td><td>85.8</td><td>69.6</td><td>51.4</td><td>69.6</td><td>3.627</td><td>176.3</td><td>1.01&times;</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td>70.2</td><td>86.8</td><td><b>73.2</b></td><td>55.2</td><td>71.4</td><td>3.075</td><td>175.9</td><td>1.01&times;</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td><b>74.0</b></td><td><b>90.2</b></td><td><u>72.4</u></td><td><b>59.4</b></td><td><b>74.0</b></td><td><b>2.734</b></td><td><b>171.7</b></td><td><b>1.04&times;</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="ap-subhead">Real-world Experiments</h3>
+  <p class="ap-sec-desc" style="text-align:left; max-width:1000px; margin:0.6rem auto 0;">Real-robot results of &pi;<sub>0.5</sub> on a 7-DoF Franka Research 3 at 50%, 25%, and 12.5% visual token retention.</p>
+
+  <figure class="ap-fig" style="max-width:1000px; margin-top:1.5rem;">
+    <img src="static/images/robot-1.png" alt="Real-robot task examples" loading="lazy" style="max-width:85%; margin:0 auto;">
+  </figure>
+
+  <div class="ap-table-wrap" style="margin-top:1.2rem;">
+    <table class="ap-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Method</th>
+          <th colspan="4">Success (%) ↑</th>
+          <th rowspan="2">FLOPs (T) ↓</th>
+          <th rowspan="2">Latency (ms) ↓</th>
+        </tr>
+        <tr>
+          <th>Tool</th><th>Doll</th><th>Towel</th><th>Banana</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>&pi;<sub>0.5</sub> (100%)</td><td>70</td><td>60</td><td>60</td><td>50</td><td>5.021</td><td>174.8</td></tr>
+
+        <tr class="group"><td colspan="7">Retained 50% (50%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td><b>60</b></td><td>50</td><td><b>50</b></td><td>30</td><td>3.996</td><td><u>167.6</u></td></tr>
+        <tr><td class="indent">+SparseVLM</td><td><b>60</b></td><td>50</td><td>40</td><td><b>40</b></td><td>4.187</td><td>169.3</td></tr>
+        <tr><td class="indent">+DivPrune</td><td><b>60</b></td><td>40</td><td>40</td><td>20</td><td><u>3.869</u></td><td>172.3</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td>50</td><td><b>60</b></td><td><b>50</b></td><td>30</td><td>4.036</td><td>169.7</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td>50</td><td><u>50</u></td><td><b>50</b></td><td>20</td><td>3.899</td><td>169.8</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td><b>60</b></td><td><b>60</b></td><td><b>50</b></td><td><u>30</u></td><td><b>3.710</b></td><td><b>166.4</b></td></tr>
+
+        <tr class="group"><td colspan="7">Retained 25% (75%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td><b>50</b></td><td><u>40</u></td><td><u>30</u></td><td>10</td><td><u>3.490</u></td><td><u>163.4</u></td></tr>
+        <tr><td class="indent">+SparseVLM</td><td>30</td><td><u>40</u></td><td><u>30</u></td><td><b>20</b></td><td>3.675</td><td>164.5</td></tr>
+        <tr><td class="indent">+DivPrune</td><td><u>40</u></td><td>30</td><td>20</td><td>10</td><td>3.299</td><td>163.7</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td><u>40</u></td><td><b>50</b></td><td><b>40</b></td><td><b>20</b></td><td>3.799</td><td>168.8</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td><u>40</u></td><td><u>40</u></td><td><u>30</u></td><td>10</td><td>3.400</td><td>167.5</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td><b>50</b></td><td><b>50</b></td><td><b>40</b></td><td>10</td><td><b>3.066</b></td><td><b>163.2</b></td></tr>
+
+        <tr class="group"><td colspan="7">Retained 12.5% (87.5%↓)</td></tr>
+        <tr><td class="indent">+FastV</td><td><u>10</u></td><td><b>20</b></td><td><b>10</b></td><td><b>10</b></td><td>3.239</td><td><u>159.1</u></td></tr>
+        <tr><td class="indent">+SparseVLM</td><td><u>10</u></td><td><u>10</u></td><td>0</td><td><b>10</b></td><td>3.538</td><td>160.5</td></tr>
+        <tr><td class="indent">+DivPrune</td><td><b>20</b></td><td><u>10</u></td><td>0</td><td>0</td><td><u>3.017</u></td><td>159.6</td></tr>
+        <tr><td class="indent">+VLA-Cache</td><td><u>10</u></td><td><b>20</b></td><td><b>10</b></td><td><b>10</b></td><td>3.676</td><td>162.0</td></tr>
+        <tr><td class="indent">+VLA-Pruner</td><td><u>10</u></td><td><u>10</u></td><td><b>10</b></td><td>0</td><td>3.117</td><td>161.4</td></tr>
+        <tr class="ours"><td class="indent">+ActPrune</td><td><b>20</b></td><td><b>20</b></td><td><b>10</b></td><td><b>10</b></td><td><b>2.744</b></td><td><b>158.3</b></td></tr>
+      </tbody>
+    </table>
+  </div>
 
 
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
+</section>
+<!-- End Results -->
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+<section class="ap-bib" id="BibTeX">
+  <h2 class="ap-bib-title">BibTeX</h2>
+  <div class="ap-bib-box">
+    <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+      <span class="copy-text">Copy</span>
+    </button>
+<pre id="bibtex-code"><code>@article{moon2026actprune,
+  title   = {{ActPrune}: Action-Grounded Visual Token Pruning
+             for Efficient Vision-Language-Action Models},
+  author  = {Moon, Sungwon and Kim, Minji and Boo, Hyemin and
+             Song, Daeun and Lee, Jiyoung},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
 }</code></pre>
-    </div>
+  </div>
 </section>
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
+<footer class="ap-footer">
+  <p>ActPrune &middot; Ewha Womans University &middot; Code coming soon</p>
+  <p>This website template is based on <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page</a> and <a href="https://nerfies.github.io" target="_blank">Nerfies</a>, licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a>.</p>
 </footer>
 
 <!-- Statcounter tracking code -->
