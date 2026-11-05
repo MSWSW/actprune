@@ -14,7 +14,7 @@ ActPrune is a training-free visual token pruning method that moves the pruning d
 
 ## Video
 
-[▶ Watch the video](assets/demo.mp4)
+C:\Users\User\actprune-main\assets\demo.mp4
 
 ## Code
 Code will be released soon.
